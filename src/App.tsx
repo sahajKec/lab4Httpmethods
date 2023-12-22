@@ -11,7 +11,7 @@ const App: React.FC = () => {
     const [todos, setTodos] = useState<Todo[]>([]);
     const [task, setTask] = useState<string>('');
     const [editId, setEditId] = useState<number | null>(null);
-    const url:string = `http://localhost:3000/todos`
+    const url:string = `http://localhost:3000/api/todos`
 
     useEffect(() => {
         fetchTodos();
